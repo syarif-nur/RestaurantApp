@@ -11,6 +11,11 @@
 		13936F512BF59DC000775259 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13936F502BF59DC000775259 /* ContentView.swift */; };
 		13936F532BF59DC100775259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13936F522BF59DC100775259 /* Assets.xcassets */; };
 		13936F562BF59DC100775259 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13936F552BF59DC100775259 /* Preview Assets.xcassets */; };
+		13936F5D2BF5A07300775259 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13936F5C2BF5A07300775259 /* RestaurantModel.swift */; };
+		13936F5F2BF5A3B300775259 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13936F5E2BF5A3B300775259 /* RestaurantViewModel.swift */; };
+		13936F612BF5A70600775259 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13936F602BF5A70500775259 /* RestaurantDetailView.swift */; };
+		13936F632BF5A9DA00775259 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13936F622BF5A9DA00775259 /* ProfileView.swift */; };
+		13936F672BF5AE0F00775259 /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13936F662BF5AE0F00775259 /* RestaurantListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		13936F502BF59DC000775259 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13936F522BF59DC100775259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13936F552BF59DC100775259 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13936F5C2BF5A07300775259 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		13936F5E2BF5A3B300775259 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
+		13936F602BF5A70500775259 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		13936F622BF5A9DA00775259 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		13936F662BF5AE0F00775259 /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +63,13 @@
 			children = (
 				13936F4E2BF59DC000775259 /* RestaurantAppApp.swift */,
 				13936F502BF59DC000775259 /* ContentView.swift */,
+				13936F662BF5AE0F00775259 /* RestaurantListView.swift */,
 				13936F522BF59DC100775259 /* Assets.xcassets */,
 				13936F542BF59DC100775259 /* Preview Content */,
+				13936F5C2BF5A07300775259 /* RestaurantModel.swift */,
+				13936F5E2BF5A3B300775259 /* RestaurantViewModel.swift */,
+				13936F602BF5A70500775259 /* RestaurantDetailView.swift */,
+				13936F622BF5A9DA00775259 /* ProfileView.swift */,
 			);
 			path = RestaurantApp;
 			sourceTree = "<group>";
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13936F672BF5AE0F00775259 /* RestaurantListView.swift in Sources */,
 				13936F512BF59DC000775259 /* ContentView.swift in Sources */,
+				13936F612BF5A70600775259 /* RestaurantDetailView.swift in Sources */,
+				13936F5F2BF5A3B300775259 /* RestaurantViewModel.swift in Sources */,
+				13936F5D2BF5A07300775259 /* RestaurantModel.swift in Sources */,
+				13936F632BF5A9DA00775259 /* ProfileView.swift in Sources */,
 				13936F4F2BF59DC000775259 /* RestaurantAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -279,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +328,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

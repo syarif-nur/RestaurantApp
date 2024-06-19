@@ -1,24 +1,19 @@
-//
-//  ContentView.swift
-//  RestaurantApp
-//
-//  Created by Syarif on 16/05/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            RestaurantListView()
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("List")
+                }
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
